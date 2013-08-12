@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firefly</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="HandheldFriendly" content="True">
+
+<script type="text/javascript" src="../../engine/client/library/Base.js" ></script>
+<script type="text/javascript" src="../../engine/client/containers.js" ></script>
+<script type="text/javascript" src="../../engine/client/library/SimplexNoise.js" ></script>
+<script type="text/javascript" src="../../engine/client/globalsFunctions.js" ></script>
+<script type="text/javascript" src="../../engine/client/useful.js" ></script>
+<script type="text/javascript" src="../../engine/client/ajax/dataLoader.js" ></script>
+<script type="text/javascript" src="../../engine/client/ajax/network.js" ></script>
+<script type="text/javascript" src="../../engine/client/scripts/frameHelper.js" ></script>
+<script type="text/javascript" src="../../engine/client/input.js" ></script>
+<script type="text/javascript" src="../../engine/client/library.js" ></script>
+<script type="text/javascript" src="../../engine/client/engine.js" ></script>
+<script type="text/javascript" src="../../engine/client/functions.js" ></script>
+<script type="text/javascript" src="../../engine/client/network.js" ></script>
+<script type="text/javascript" src="../../engine/client/sound.js" ></script>
+<script type="text/javascript" src="../../engine/client/area.js" ></script>
+<script type="text/javascript" src="../../engine/client/dataLoader.js" ></script>
+<script type="text/javascript" src="../../engine/client/baseElement.js" ></script>
+<script type="text/javascript" src="../../engine/client/drawable.js" ></script>
+<script type="text/javascript" src="../../engine/client/entity.js" ></script>
+<script type="text/javascript" src="../../engine/client/gaming/GameEntity.js" ></script>
+<script type="text/javascript" src="../../engine/client/ui/button.js" ></script>
+<script type="text/javascript" src="../../engine/client/ui/text.js" ></script>
+<script type="text/javascript" src="../../engine/client/sound.js" ></script>
+<script type="text/javascript" src="../../engine/client/particleSystem.js" ></script>
+<script type="text/javascript" src="../../engine/client/ui/textbox.js" ></script>
+<script type="text/javascript" src="../../engine/client/ui/button.js" ></script>
+<script type="text/javascript" src="sample_textbox.js"></script>
+
+<style type="text/css">
+canvas{
+	-webkit-touch-callout : none !important;
+	-webkit-user-select : none !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-khtml-user-select : none !important;
+	-ms-interpolation-mode : nearest-neighbor !important;
+	-ms-user-select : none !important;
+	-moz-user-select : moz-none !important;
+	image-rendering: -moz-crisp-edges;
+	image-tendering : -webkit-optimize-contrast !important;
+	user-select : none !important;
+	position:relative;
+	width:840px;
+	height:480px;
+}
+html, body{
+	margin:0;
+	padding:0;
+	background:#333333;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#canvas{
+	position:relative;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	new frameEngine("canvas");
+}
+</script>
+</head>
+<body>
+<input type="text" id="keyboard_textbox" size="500"/>
+<canvas id="canvas"></canvas>
+
+</body>
+</html>
